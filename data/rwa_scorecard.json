@@ -1,0 +1,356 @@
+{
+  "generated_at": "2026-11-01T17:48:34.096103+00:00",
+  "methodology_version": "0.1-draft",
+  "tokens": [
+    {
+      "slug": "usdc",
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "category": "Stablecoins",
+      "issuer": "Circle",
+      "overall_score": 74,
+      "coverage_pct": 100,
+      "is_ranked": true,
+      "provisional_reason": null,
+      "min_keys_to_lie": 1,
+      "questions": [
+        {
+          "name": "freshness",
+          "label": "Freshness",
+          "score": 100,
+          "status": "measured",
+          "reason": "Worst oracle (Chainlink USDC/USD) last updated 3.0h ago (expected within 23h).",
+          "as_of": "2026-11-01T14:48:59+00:00",
+          "source": "Chainlink USDC/USD"
+        },
+        {
+          "name": "supply",
+          "label": "Supply vs. reserves",
+          "score": 98,
+          "status": "measured",
+          "reason": "Attested reserves cover 100.1% of global circulating supply (gap score 100); last attested 785.8h ago (age score 95).",
+          "as_of": "2026-09-30T00:00:00+00:00",
+          "source": "Manual sheet's paired attested_supply (same report date as attested_reserve_usd, scope=global)"
+        },
+        {
+          "name": "price",
+          "label": "Price vs. NAV",
+          "score": 99,
+          "status": "measured",
+          "reason": "Market price deviates 0.03% from NAV.",
+          "as_of": "2026-11-01T17:47:45.271097+00:00",
+          "source": null
+        },
+        {
+          "name": "concentration",
+          "label": "Control",
+          "score": 0,
+          "status": "measured",
+          "reason": "Weakest control path needs 1 key(s) to act. Unresolved: admin: no EIP-1967 admin slot set on this address; proxy_owner: none of ['proxyOwner'] exist on this contract; Chainlink USDC/USD: ETHERSCAN_API_KEY is not set.",
+          "as_of": "2026-11-01T17:47:45.271097+00:00",
+          "source": "On-chain control roles (owner/admin/minter/pauser/blacklister)"
+        }
+      ]
+    },
+    {
+      "slug": "usdt",
+      "symbol": "USDT",
+      "name": "Tether USD",
+      "category": "Stablecoins",
+      "issuer": "Tether",
+      "overall_score": 89,
+      "coverage_pct": 100,
+      "is_ranked": true,
+      "provisional_reason": null,
+      "min_keys_to_lie": 3,
+      "questions": [
+        {
+          "name": "freshness",
+          "label": "Freshness",
+          "score": 100,
+          "status": "measured",
+          "reason": "Worst oracle (Chainlink USDT/USD) last updated 3.0h ago (expected within 24h).",
+          "as_of": "2026-11-01T14:46:59+00:00",
+          "source": "Chainlink USDT/USD"
+        },
+        {
+          "name": "supply",
+          "label": "Supply vs. reserves",
+          "score": 90,
+          "status": "measured",
+          "reason": "Attested reserves cover 102.2% of global circulating supply (gap score 100); last attested 2993.8h ago (age score 81).",
+          "as_of": "2026-06-30T00:00:00+00:00",
+          "source": "Manual sheet's paired attested_supply (same report date as attested_reserve_usd, scope=global)"
+        },
+        {
+          "name": "price",
+          "label": "Price vs. NAV",
+          "score": 97,
+          "status": "measured",
+          "reason": "Market price deviates 0.13% from NAV.",
+          "as_of": "2026-11-01T17:47:50.255049+00:00",
+          "source": null
+        },
+        {
+          "name": "concentration",
+          "label": "Control",
+          "score": 70,
+          "status": "measured",
+          "reason": "Weakest control path needs 3 key(s) to act. Unresolved: admin: no EIP-1967 admin slot set on this address; minter: none of ['masterMinter', 'minter'] exist on this contract; pauser: none of ['pauser'] exist on this contract.",
+          "as_of": "2026-11-01T17:47:50.255049+00:00",
+          "source": "On-chain control roles (owner/admin/minter/pauser/blacklister)"
+        }
+      ]
+    },
+    {
+      "slug": "tusd",
+      "symbol": "TUSD",
+      "name": "TrueUSD",
+      "category": "Stablecoins",
+      "issuer": "Techteryx",
+      "overall_score": 66,
+      "coverage_pct": 100,
+      "is_ranked": true,
+      "provisional_reason": null,
+      "min_keys_to_lie": 2,
+      "questions": [
+        {
+          "name": "freshness",
+          "label": "Freshness",
+          "score": 100,
+          "status": "measured",
+          "reason": "Worst oracle (Chainlink TUSD/USD) last updated 8.8h ago (expected within 24h).",
+          "as_of": "2026-11-01T09:00:23+00:00",
+          "source": "Chainlink TUSD/USD"
+        },
+        {
+          "name": "supply",
+          "label": "Supply vs. reserves",
+          "score": 25,
+          "status": "disputed",
+          "reason": "99.98% of reserves ($501.85M) at First Digital Trust in an illiquid fund reported at cost, under litigation (DIFC freezing order up to $456M); auditor did not examine fair value; $78,900 in cash",
+          "as_of": "2026-10-30T00:00:00+00:00",
+          "source": "Manual sheet's paired attested_supply (same report date as attested_reserve_usd, scope=global)"
+        },
+        {
+          "name": "price",
+          "label": "Price vs. NAV",
+          "score": 97,
+          "status": "measured",
+          "reason": "Market price deviates 0.15% from NAV.",
+          "as_of": "2026-11-01T17:47:54.672525+00:00",
+          "source": null
+        },
+        {
+          "name": "concentration",
+          "label": "Control",
+          "score": 40,
+          "status": "measured",
+          "reason": "Weakest control path needs 2 key(s) to act. Unresolved: admin: no EIP-1967 admin slot set on this address; minter: none of ['masterMinter', 'minter'] exist on this contract; pauser: none of ['pauser'] exist on this contract.",
+          "as_of": "2026-11-01T17:47:54.672525+00:00",
+          "source": "On-chain control roles (owner/admin/minter/pauser/blacklister)"
+        }
+      ]
+    },
+    {
+      "slug": "usd1",
+      "symbol": "USD1",
+      "name": "World Liberty Financial USD",
+      "category": "Stablecoins",
+      "issuer": "World Liberty Financial",
+      "overall_score": 67,
+      "coverage_pct": 100,
+      "is_ranked": true,
+      "provisional_reason": null,
+      "min_keys_to_lie": 1,
+      "questions": [
+        {
+          "name": "freshness",
+          "label": "Freshness",
+          "score": 100,
+          "status": "measured",
+          "reason": "Worst oracle (Chainlink USD1/USD) last updated 2.5h ago (expected within 24h).",
+          "as_of": "2026-11-01T15:19:23+00:00",
+          "source": "Chainlink USD1/USD"
+        },
+        {
+          "name": "supply",
+          "label": "Supply vs. reserves",
+          "score": 72,
+          "status": "measured",
+          "reason": "Attested reserves cover 100.0% of global circulating supply (gap score 100); last attested 1505.8h ago (age score 45).",
+          "as_of": "2026-08-31T00:00:00+00:00",
+          "source": "Manual sheet's paired attested_supply (same report date as attested_reserve_usd, scope=global)"
+        },
+        {
+          "name": "price",
+          "label": "Price vs. NAV",
+          "score": 95,
+          "status": "measured",
+          "reason": "Market price deviates 0.23% from NAV.",
+          "as_of": "2026-11-01T17:48:00.795897+00:00",
+          "source": null
+        },
+        {
+          "name": "concentration",
+          "label": "Control",
+          "score": 0,
+          "status": "measured",
+          "reason": "Weakest control path needs 1 key(s) to act. Unresolved: minter: none of ['masterMinter', 'minter'] exist on this contract; pauser: none of ['pauser'] exist on this contract; blacklister: none of ['blacklister'] exist on this contract.",
+          "as_of": "2026-11-01T17:48:00.795897+00:00",
+          "source": "On-chain control roles (owner/admin/minter/pauser/blacklister)"
+        }
+      ]
+    },
+    {
+      "slug": "ustb",
+      "symbol": "USTB",
+      "name": "Invesco Short Duration US Government Securities Fund",
+      "category": "Treasuries",
+      "issuer": "Invesco Advisers, Inc. (fund manager); Superstate (transfer agent / on-chain infrastructure)",
+      "overall_score": 50,
+      "coverage_pct": 100,
+      "is_ranked": true,
+      "provisional_reason": null,
+      "min_keys_to_lie": 1,
+      "questions": [
+        {
+          "name": "freshness",
+          "label": "Freshness",
+          "score": 100,
+          "status": "measured",
+          "reason": "Worst oracle (Chainlink USTB NAV Oracle) last updated 26.1h ago (expected within 26h).",
+          "as_of": "2026-10-31T15:43:59+00:00",
+          "source": "Chainlink USTB NAV Oracle"
+        },
+        {
+          "name": "supply",
+          "label": "Supply vs. reserves",
+          "score": 50,
+          "status": "self_reported",
+          "reason": "Attested reserves cover 1200.1% of Ethereum on-chain supply. Attestation-age component unavailable (no reserve-oracle heartbeat, and no manual attestation date/frequency on file). This is the issuer's own on-chain accounting, not an independent attestation -- capped at 50.",
+          "as_of": "2026-10-28T00:00:00+00:00",
+          "source": "Ethereum on-chain total supply"
+        },
+        {
+          "name": "price",
+          "label": "Price vs. NAV",
+          "score": null,
+          "status": "not_applicable",
+          "reason": "No public secondary market for this allowlist-gated asset; price-vs-NAV doesn't apply.",
+          "as_of": null,
+          "source": null
+        },
+        {
+          "name": "concentration",
+          "label": "Control",
+          "score": 0,
+          "status": "measured",
+          "reason": "Weakest control path needs 1 key(s) to act. Unresolved: minter: none of ['masterMinter', 'minter'] exist on this contract; pauser: none of ['pauser'] exist on this contract; blacklister: none of ['blacklister'] exist on this contract.",
+          "as_of": "2026-11-01T17:48:19.738279+00:00",
+          "source": "On-chain control roles (owner/admin/minter/pauser/blacklister)"
+        }
+      ]
+    },
+    {
+      "slug": "paxg",
+      "symbol": "PAXG",
+      "name": "Paxos Gold",
+      "category": "Commodities",
+      "issuer": "Paxos",
+      "overall_score": 72,
+      "coverage_pct": 100,
+      "is_ranked": true,
+      "provisional_reason": null,
+      "min_keys_to_lie": 1,
+      "questions": [
+        {
+          "name": "freshness",
+          "label": "Freshness",
+          "score": 100,
+          "status": "measured",
+          "reason": "Worst oracle (Chainlink PAXG/USD) last updated 0.2h ago (expected within 24h).",
+          "as_of": "2026-11-01T17:36:59+00:00",
+          "source": "Chainlink PAXG/USD"
+        },
+        {
+          "name": "supply",
+          "label": "Supply vs. reserves",
+          "score": 98,
+          "status": "measured",
+          "reason": "Attested reserves cover 100.0% of global circulating supply (oz, compared directly -- no price conversion) (gap score 100); last attested 785.8h ago (age score 95).",
+          "as_of": "2026-09-30T00:00:00+00:00",
+          "source": "Manual sheet's paired attested_supply (same report date as attested_reserve_usd, scope=global)"
+        },
+        {
+          "name": "price",
+          "label": "Price vs. NAV",
+          "score": 91,
+          "status": "measured",
+          "reason": "Market price deviates 0.45% from NAV.",
+          "as_of": "2026-11-01T17:48:27.387470+00:00",
+          "source": "Chainlink XAU/USD"
+        },
+        {
+          "name": "concentration",
+          "label": "Control",
+          "score": 0,
+          "status": "measured",
+          "reason": "Weakest control path needs 1 key(s) to act. Unresolved: admin (): manually flagged unresolved (see data/manual/control.csv): https://etherscan.io/address/0x45804880De22913dAFE09f4980848ECE6EcbAf78#code (checked 2026-11-01); minter: none of ['masterMinter', 'minter'] exist on this contract; pauser: none of ['pauser'] exist on this contract.",
+          "as_of": "2026-11-01T17:48:27.387470+00:00",
+          "source": "On-chain control roles (owner/admin/minter/pauser/blacklister)"
+        }
+      ]
+    },
+    {
+      "slug": "syrup-usdc",
+      "symbol": "syrupUSDC",
+      "name": "Syrup USDC",
+      "category": "Private Credit",
+      "issuer": "Maple Finance",
+      "overall_score": 62,
+      "coverage_pct": 75,
+      "is_ranked": true,
+      "provisional_reason": null,
+      "min_keys_to_lie": null,
+      "questions": [
+        {
+          "name": "freshness",
+          "label": "Freshness",
+          "score": 100,
+          "status": "measured",
+          "reason": "Worst oracle (syrupUSDC vault accounting) last updated 0.0h ago (expected within 168h).",
+          "as_of": "2026-11-01T17:48:34.096103+00:00",
+          "source": "syrupUSDC vault accounting"
+        },
+        {
+          "name": "supply",
+          "label": "Supply vs. reserves",
+          "score": 50,
+          "status": "self_reported",
+          "reason": "Attested reserves cover 119.1% of Ethereum on-chain supply (gap score 100); last attested 0.0h ago (age score 100). This is the issuer's own on-chain accounting, not an independent attestation -- capped at 50.",
+          "as_of": "2026-11-01T17:48:34.096103+00:00",
+          "source": "Ethereum on-chain vault accounting (same chain as supply)"
+        },
+        {
+          "name": "price",
+          "label": "Price vs. NAV",
+          "score": 99,
+          "status": "measured",
+          "reason": "Market price deviates 0.07% from NAV.",
+          "as_of": "2026-11-01T17:48:34.096103+00:00",
+          "source": null
+        },
+        {
+          "name": "concentration",
+          "label": "Control",
+          "score": null,
+          "status": "not_published",
+          "reason": "No classifiable control role (owner/admin/minter/pauser/blacklister) exists on this contract. owner: none of ['owner'] exist on this contract; admin: no EIP-1967 admin slot set on this address; minter: none of ['masterMinter', 'minter'] exist on this contract.",
+          "as_of": "2026-11-01T17:48:34.096103+00:00",
+          "source": "On-chain control roles (owner/admin/minter/pauser/blacklister)"
+        }
+      ]
+    }
+  ]
+}
