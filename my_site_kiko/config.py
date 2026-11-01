@@ -7,7 +7,7 @@ SITE = {
     "name": "Francisco Santos",
     "role": "Business Management student",
     "university": "Nova SBE, Lisbon",
-    "tagline": "Documenting my journey into Descentralized Finance.",
+    "tagline": "Documenting my journey into Decentralized Finance.",
     "about": (
         "I am a 19 year-old Business Management Student from Nova SBE in Lisbon. "
         "I believe that technology will reshape the future of finance. I'm currently "
