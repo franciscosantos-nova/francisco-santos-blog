@@ -1,5 +1,5 @@
 ---
-title: "SWIFT vs. the Blockchain: Same Money, Different Roads"
+title: "SWIFT vs. Stablecoins"
 date: 2026-11-02
 excerpt: "A €10 transfer to a friend in Lisbon lands before he's finished his drink. The same kind of payment, €500 to Argentina, takes days and loses money along the way. Here's what actually happens inside both, and why stablecoins only win once you look at the edges."
 tags: ["stablecoins", "payments", "crypto", "finance"]
